@@ -1,6 +1,6 @@
 body {
-  background-color: #BDBDBD;
-  color: #424530;
+  background-color: #CFD5DB;
+  color: #394152;
 }
 
 h1 {
@@ -21,4 +21,8 @@ input [type="text"]{
 }
 form input[type="button"] {
   margin: 10px 5px auto;
+}
+
+table tr {
+  color: #394152;
 }
