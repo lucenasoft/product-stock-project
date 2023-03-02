@@ -1,0 +1,24 @@
+body {
+  background-color: #BDBDBD;
+  color: #424530;
+}
+
+h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+  width: 400px;
+  margin: 10px auto;
+}
+
+input [type="text"]{
+  background-color: #424530;
+}
+form input[type="button"] {
+  margin: 10px 5px auto;
+}
