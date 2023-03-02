@@ -2,6 +2,7 @@ import './App.css';
 import Formulario from './Formulario';
 import Tabela from './Tabela';
 import React, {useState} from "react";
+import Footer from './footer';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <h1>Product Stock</h1>
       <Formulario botao={btnCadastrar} />
       <Tabela />
+      <Footer />
     </div>
   );
 }

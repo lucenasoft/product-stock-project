@@ -1,6 +1,7 @@
 body {
   background-color: #CFD5DB;
   color: #394152;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -25,4 +26,8 @@ form input[type="button"] {
 
 table tr {
   color: #394152;
+}
+
+footer {
+  text-align: center;
 }
