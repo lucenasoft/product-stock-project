@@ -5,9 +5,17 @@ import React, {useEffect, useState} from "react";
 
 function App() {
 
+  //Objeto produto
+  const produto = {
+    codigo: 0,
+    nome: "",
+    marca: ""
+  }
+
   //UseState
-  const [btnCadastrar, setBtnCadastrar] = useState(true)
-  const  [produtos, setProdutos] = useState([])
+  const [btnCadastrar, setBtnCadastrar] = useState(true);
+  const [produtos, setProdutos] = useState([]);
+  const [objProduto, setObjProduto] = useState(produto);
 
   //UseEffect
   useEffect(() => {
@@ -16,12 +24,17 @@ function App() {
     .then(retorno_convertido => setProdutos(retorno_convertido))
   }, []);
 
+  //Obtendo os dados do formulario
+  const aoDigitar = (e) => {
+    setObjProduto({...objProduto, [e.target.name]: e.target.value});
+  }
+
   //Retorno
   return (
     <div>
       <h1>Product Stock</h1>
-      <Formulario botao={btnCadastrar}/>
-      <Tabela />
+      <Formulario botao={btnCadastrar} eventoTeclado={aoDigitar}/>
+      <Tabela vetor={produtos}/>
     </div>
   );
 }
